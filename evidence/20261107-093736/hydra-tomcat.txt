@@ -1,0 +1,9 @@
+Hydra v9.7 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-11-07 09:41:23
+[DATA] max 1 task per 1 server, overall 1 task, 1 login try (l:1/p:1), ~1 try per task
+[DATA] attacking http-get://192.168.56.3:8180/manager/html
+[8180][http-get] host: 192.168.56.3   misc: /manager/html   login: tomcat   password: tomcat
+[STATUS] attack finished for 192.168.56.3 (valid pair found)
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-11-07 09:41:23

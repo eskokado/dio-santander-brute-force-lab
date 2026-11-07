@@ -1,0 +1,7 @@
+# Ncrack 0.7 scan initiated Sat Nov  7 09:40:28 2026 as: ncrack -vv --user msfadmin --pass msfadmin -oN /home/kali/lab-output/20261107-093736/ncrack-ssh.txt ssh://192.168.56.3
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+192.168.56.3 22/tcp ssh: 'msfadmin' 'msfadmin'
+
+# Ncrack done at Sat Nov  7 09:40:31 2026 -- 1 service scanned in 3.01 seconds.
+Probes sent: 1 | timed-out: 0 | prematurely-closed: 0

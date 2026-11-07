@@ -1,0 +1,4 @@
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+2026-11-07 09:41:16 ACCOUNT CHECK: [ssh] Host: 192.168.56.3 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: msfadmin (1 of 1 complete)
+2026-11-07 09:41:16 ACCOUNT FOUND: [ssh] Host: 192.168.56.3 User: msfadmin Password: msfadmin [SUCCESS]

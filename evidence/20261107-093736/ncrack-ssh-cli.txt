@@ -1,0 +1,13 @@
+
+Starting Ncrack 0.7 ( http://ncrack.org ) at 2026-11-07 09:40 EST
+
+Discovered credentials on ssh://192.168.56.3:22 'msfadmin' 'msfadmin'
+ssh://192.168.56.3:22 finished.
+
+Discovered credentials for ssh on 192.168.56.3 22/tcp:
+192.168.56.3 22/tcp ssh: 'msfadmin' 'msfadmin'
+
+Ncrack done: 1 service scanned in 3.01 seconds.
+Probes sent: 1 | timed-out: 0 | prematurely-closed: 0
+
+Ncrack finished.

@@ -1,0 +1,15 @@
+Using default input encoding: UTF-8
+Loaded 7 password hashes with 7 different salts (md5crypt, crypt(3) $1$ (and variants) [MD5 256/256 AVX2 8x3])
+Remaining 4 password hashes with 4 different salts
+Will run 4 OpenMP threads
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+Warning: Only 13 candidates left, minimum 96 needed for performance.
+0g 0:00:00:00 DONE (2026-11-07 09:41) 0g/s 433.3p/s 1733c/s 1733C/s msfadmin..secret
+Session completed. 
+Using default input encoding: UTF-8
+Loaded 7 password hashes with 7 different salts (md5crypt, crypt(3) $1$ (and variants) [MD5 256/256 AVX2 8x3])
+Remaining 4 password hashes with 4 different salts
+Will run 4 OpenMP threads
+Press Ctrl-C to abort, or send SIGUSR1 to john process for status
+0g 0:00:00:00 DONE (2026-11-07 09:41) 0g/s 25000p/s 100000c/s 100000C/s football1..cassandra
+Session completed. 

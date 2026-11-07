@@ -1,0 +1,19 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-11-07 09:41 -0500
+Nmap scan report for 192.168.56.3
+Host is up (0.00082s latency).
+
+PORT     STATE SERVICE
+3306/tcp open  mysql
+| mysql-empty-password: 
+|_  root account has empty password
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.0.51a-3ubuntu5
+|   Thread ID: 31
+|   Capabilities flags: 43564
+|   Some Capabilities: ConnectWithDatabase, SupportsTransactions, Speaks41ProtocolNew, Support41Auth, LongColumnFlag, SwitchToSSLAfterHandshake, SupportsCompression
+|   Status: Autocommit
+|_  Salt: D}k!`?\0v(`,WRttf&(6
+MAC Address: 08:00:27:23:0F:A9 (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 3.51 seconds

@@ -1,0 +1,13 @@
+
+Starting Ncrack 0.7 ( http://ncrack.org ) at 2026-11-07 09:40 EST
+
+Discovered credentials on ftp://192.168.56.3:21 'msfadmin' 'msfadmin'
+ftp://192.168.56.3:21 finished.
+
+Discovered credentials for ftp on 192.168.56.3 21/tcp:
+192.168.56.3 21/tcp ftp: 'msfadmin' 'msfadmin'
+
+Ncrack done: 1 service scanned in 3.01 seconds.
+Probes sent: 1 | timed-out: 0 | prematurely-closed: 0
+
+Ncrack finished.

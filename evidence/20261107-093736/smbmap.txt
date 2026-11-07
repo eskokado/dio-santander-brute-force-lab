@@ -1,0 +1,27 @@
+
+    ________  ___      ___  _______   ___      ___       __         _______
+   /"       )|"  \    /"  ||   _  "\ |"  \    /"  |     /""\       |   __ "\
+  (:   \___/  \   \  //   |(. |_)  :) \   \  //   |    /    \      (. |__) :)
+   \___  \    /\  \/.    ||:     \/   /\   \/.    |   /' /\  \     |:  ____/
+    __/  \   |: \.        |(|  _  \  |: \.        |  //  __'  \    (|  /
+   /" \   :) |.  \    /:  ||: |_)  :)|.  \    /:  | /   /  \   \  /|__/ \
+  (_______/  |___|\__/|___|(_______/ |___|\__/|___|(___/    \___)(_______)
+-----------------------------------------------------------------------------
+SMBMap - Samba Share Enumerator v1.10.7 | Shawn Evans - ShawnDEvans@gmail.com
+                     https://github.com/ShawnDEvans/smbmap
+
+[\] Checking for open ports...                                                                                                    [|] Checking for open ports...                                                                                                    [/] Checking for open ports...                                                                                                    [-] Checking for open ports...                                                                                                    [*] Detected 1 hosts serving SMB
+[\] Initializing hosts...                                                                                                    [|] Initializing hosts...                                                                                                    [/] Initializing hosts...                                                                                                    [-] Initializing hosts...                                                                                                    [\] Initializing hosts...                                                                                                    [|] Authenticating...                                                                                                    [/] Authenticating...                                                                                                    [-] Authenticating...                                                                                                    [\] Authenticating...                                                                                                    Traceback (most recent call last):
+  File "/usr/bin/smbmap", line 33, in <module>
+    sys.exit(load_entry_point('smbmap==1.10.7', 'console_scripts', 'smbmap')())
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/smbmap/smbmap.py", line 1495, in main
+    connections = login_worker.map(login, hosts_auth)
+  File "/usr/lib/python3.14/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.14/multiprocessing/pool.py", line 774, in get
+    raise self._value
+multiprocessing.pool.MaybeEncodingError: Error sending result: '[<impacket.smbconnection.SMBConnection object at 0x7fad9e4e5940>]'. Reason: 'PicklingError("Can't pickle local object <function Structure.__init__.<locals>.<lambda> at 0x7fad9cd91b10>")'
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:475: UserWarning: resource_tracker: There appear to be 18 leaked semaphore objects to clean up at shutdown: {'/mp-33_ll31g', '/mp-meygbmla', '/mp-67_8pbgz', '/mp-bf7_qr4i', '/mp-bw_qstng', '/mp-j8qi9fp2', '/mp-huldtyss', '/mp-amvhyqa6', '/mp-nsj39iku', '/mp-6aabb_hk', '/mp-hku4fzo_', '/mp-837pnsp1', '/mp-trgv_6sp', '/mp-38g0072u', '/mp-yamyswgj', '/mp-oois47ii', '/mp-qom44lr6', '/mp-cttwgd46'}
+  warnings.warn(

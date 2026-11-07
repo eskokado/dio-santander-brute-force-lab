@@ -1,0 +1,3 @@
+$1$labsalt1$6NngcTwb0MeNBlMX85SHc1:msfadmin
+$1$labsalt2$yArVlN0y/q6jNc0rK02aT.:password
+$1$labsalt3$krkemBu2vBPpx855rI5RG0:secret

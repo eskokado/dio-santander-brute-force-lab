@@ -1,0 +1,10 @@
+version()
+5.0.51a-3ubuntu5
+Database
+information_schema
+dvwa
+metasploit
+mysql
+owasp10
+tikiwiki
+tikiwiki195

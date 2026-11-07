@@ -1,0 +1,12 @@
+msfadmin
+user
+admin
+administrator
+service
+ftp
+postgres
+mysql
+tomcat
+www
+root
+guest

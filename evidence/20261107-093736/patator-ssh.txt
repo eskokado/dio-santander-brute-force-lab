@@ -1,0 +1,18 @@
+09:41:11 patator    INFO - Starting Patator 1.1.0 (https://github.com/lanjelot/patator) with Python-3.14.7 at 2026-11-07 09:41 EST
+09:41:11 patator    INFO -                                                                              
+09:41:11 patator    INFO - code  size    time | candidate                          |   num | mesg
+09:41:11 patator    INFO - -----------------------------------------------------------------------------
+09:41:12 patator    FAIL - xxx   96     0.113 | msfadmin                           |     1 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:12 patator    FAIL - xxx   96     0.109 | password                           |     2 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:12 patator    FAIL - xxx   96     0.108 | 123456                             |     3 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:13 patator    FAIL - xxx   96     0.109 | 12345                              |     4 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:13 patator    FAIL - xxx   96     0.109 | admin                              |     5 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:13 patator    FAIL - xxx   96     0.114 | root                               |     6 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:13 patator    FAIL - xxx   96     0.109 | toor                               |     7 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:14 patator    FAIL - xxx   96     0.109 | pass                               |     8 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:14 patator    FAIL - xxx   96     0.110 | qwerty                             |     9 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:14 patator    FAIL - xxx   96     0.110 | letmein                            |    10 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:15 patator    FAIL - xxx   96     0.110 | Password1                          |    11 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:15 patator    FAIL - xxx   96     0.109 | admin123                           |    12 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:15 patator    FAIL - xxx   96     0.110 | secret                             |    13 | <class 'paramiko.ssh_exception.IncompatiblePeer'> Incompatible ssh peer (no acceptable host key)
+09:41:16 patator    INFO - Hits/Done/Skip/Fail/Size: 0/13/0/13/13, Avg: 2 r/s, Time: 0h 0m 4s
