@@ -1,0 +1,7 @@
+msfadmin:msfadmin
+admin:password
+user:password
+service:service
+postgres:postgres
+admin:admin123
+msfadmin:password
