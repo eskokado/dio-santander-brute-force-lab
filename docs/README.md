@@ -8,6 +8,7 @@ Metasploitable 2, em ambiente controlado, e publicar o resultado em um repositó
 | [planejamento.md](planejamento.md) | Objetivo, escopo, fases, critérios de aceite, riscos e próximos passos |
 | [ambiente.md](ambiente.md) | Host, VMs, rede host-only, acesso (túnel/RDP/SSH) e troubleshooting |
 | [ataques.md](ataques.md) | Script `lab-attacks.sh`, mapa do menu do curso, comandos e resultados |
+| [resultados.md](resultados.md) | Resumo dos achados, destaques e mitigações |
 
 ## Status
 

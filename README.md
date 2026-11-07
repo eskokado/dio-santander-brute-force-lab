@@ -184,6 +184,7 @@ Principais telas:
 - [docs/planejamento.md](docs/planejamento.md) — escopo, fases, critérios e riscos
 - [docs/ambiente.md](docs/ambiente.md) — host, VMs, rede, acesso e troubleshooting
 - [docs/ataques.md](docs/ataques.md) — módulos, comandos manuais e mapa do curso
+- [docs/resultados.md](docs/resultados.md) — resumo dos achados, destaques e mitigações
 - [evidence/20261107-093736/run.log](evidence/20261107-093736/run.log) — execução final
 
 ## Referências
